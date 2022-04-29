@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cynthia Ramlo: Designer</title>
+<link rel="stylesheet" href="css/project_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio website for UX and UI Design projects">
+    <meta name="keywords" content="Nakoda, Nakota, Lakota, Language Project">
+    <meta name="author" content="Cynthia Ramlo">
+    <script src="scripts/project.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav id="masthead">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a>
+                <div class="mobile">
+                    <ul>
+                        <li><a href="ui_design.html">UX & UI</a></li>
+                        <li><a href="app.html">Language Apps</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <header>
+                <h1>Cynthia Ramlo</h1>
+                <h2>projects &amp; designs</h2>
+        </header>
+        <main>
+            <div class="grid-container">
+                <div class="grid-item-head"><a href="app.html"><img src="images/elk_alphabet.jpg" alt="alphabet book" class="mobile" /></a><br />Language Apps</div>
+                <div class="grid-item-head"><a href="projects.html"><img src="images/powwow_sm.jpg" alt="powwow dancer" class="mobile" /></a><br />Instructional Projects</div>
+                <div class="grid-item-head"><a href="ui_design.html"><img src="images/avalon_sm.jpg" alt="Media Collections Online" class="mobile" /></a><br />UX &amp; UI</div>
+                <div class="grid-item">I created interfaces and interactions for Mandan and Nakoda language learning apps.</div>
+                <div class="grid-item">I have worked on a number of projects that focus on Native American language revitalization and cultural resiliance.</div>
+                <div class="grid-item">Learn about some of my UX and UI designs, including work on the AVALON Media Project. </div>
+
+            </div>
+         </main>
+        <footer>
+            <p><a href="projects.html">Projects</a><a href="ui_design.html">UX &amp; UI Designs</a><a href="app.html">Language Apps</a><a href="resume.html">Resume</a></p>
+            <p>
+                &copy; 2020
+            </p>
+            <button onclick="myForm()">Contact Me</button>  
+            <div id="myForm">
+                <div class="container-form">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">First Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Last Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="project">Project</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="project" name="project">
+                                    <option value="UX">UX Design &amp; Usability Testing</option>
+                                    <option value="UI">UI Design Project</option>
+                                    <option value="Instructional">Instructional Design Project</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject">Have an idea for a project?</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Let's work together . . . " style="height:200px"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button onclick="myForm()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
