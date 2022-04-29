@@ -1,0 +1,687 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #9389BD;
+	color: #343434;
+	margin: 0;
+	padding: 0;
+	font-family: 'Franklin Gothic', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+header {
+	text-align: center;
+	background: url("../images/splash_new_sm.png") no-repeat left;
+}
+
+	header h2 a {
+		padding: 0px 10px;
+		text-decoration: none;
+		color: #89B3BD;
+	}
+main {
+
+}
+nav {
+	float: right;
+	font-weight: 600;
+	font-size: 1em;
+	text-align: center;
+}
+
+	nav ul li {
+		display: inline-block;
+		list-style-type: none;
+	}
+
+		nav ul li a {
+			text-decoration: none;
+			color: #ffffff;
+			padding: 0px 10px 0px 0px;
+		}
+
+			ul li ul li:hover {
+				background: #999;
+			}
+
+				ul li:hover ul {
+					display: block;
+				}
+
+ul li ul {
+	position: absolute;
+	width: 130px;
+	display: none;
+	text-align: left;
+}
+
+	ul li ul li {
+		background: #333;
+		display: block;
+		padding: 4px 10px;
+		margin-left: -3em;
+	}
+
+		ul li ul li a {
+			display: block !important;
+		}
+
+		ul li ul li:hover {
+			background: #666;
+		}
+
+h1 {
+	padding: 25px 0px 0px;
+	font-size: 3em;
+	color: #408cc3;
+	border: 1px;
+	font-weight: lighter;
+}
+h2 {
+	padding: 0px 0px;
+	font-size: 2em;
+	color: #89B3BD;
+	border: 1px;
+	margin-top: -1.6em;
+}
+
+h3 {
+    font-size: 1.5em;
+	color: #89B3BD;
+}
+
+table {
+    margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+
+td {
+    padding: 0 0 18px;
+}
+
+caption {
+    font-size: 1.5em;
+	color: #89B3BD;
+	padding: 8px 0;
+}
+
+footer {
+	text-align: center;
+	font-style: italic;
+	color: #9389BD;
+}
+
+	footer a {
+		color: #9389BD;
+		text-decoration: none;
+		font-weight: 300;
+		padding: 0 12px;
+	}
+
+		footer a:hover {
+			color: #89B3BD;
+			font-weight: 400;
+		}
+
+
+/* begin id */
+
+#masthead {
+	background-color: #9389BD;
+	color: #e1e8e3;
+	box-shadow: 5px 5px #999;
+	border-radius: 10px;
+}
+
+#wrapper {
+	background-color: #eceef1;
+	width: 90%;
+	margin-top: 10px;
+	min-width: 900px;
+	max-width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid;
+	padding: 20px 20px 20px;
+	border-radius: 10px;
+}
+
+/* begin class  */
+
+.grid-container {
+	display: grid;
+	grid-column-gap: 23px;
+	grid-template-columns: auto auto auto;
+	background-color: #9389BD;
+	padding: 10px;
+	border-radius: 10px;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-item-head {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 10px 10px 0px;
+	font-size: 1.5em;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+}
+
+	.grid-item-head img {
+		opacity: 1;
+		cursor: pointer;
+		border-radius: 10px;
+	}
+
+		.grid-item-head img:hover {
+			opacity: .7;
+		}
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0px 10px 10px;
+	font-size: 1em;
+	text-align: center;
+}
+
+.grid-container-skills {
+	display: grid;
+	grid-column-gap: 23px;
+	grid-template-columns: auto auto;
+	padding: 10px;
+	border-radius: 10px;
+	grid-auto-rows: minmax(30px, auto);
+}
+grid-item-skills {
+	background: none;
+}
+
+.img {
+	border: 1px solid #999;
+	box-shadow: 3px 3px #666;
+}
+
+.floatright {
+	padding: 0 2em 2em 0;
+	float: right;
+}
+
+.inline {
+	display: inline;
+}
+
+.round {
+    border-radius: 10px;
+}
+
+.emphasis {
+	color: #89B3BD;
+	font-weight: 400;
+}
+
+.emphasis a {
+	color: #89B3BD;
+	font-weight: 400;
+}
+
+/* Resume */
+/* Work Experience */
+
+.work-experience {
+	background: #725f8c;
+	width: 85%;
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 10px 60px;
+	color: #eceef1;
+}
+
+h3 {
+	margin-bottom: 0;
+	font-weight: 400;
+}
+
+.item-details h3 + p {
+	font-style: italic;
+	margin: 0;
+}
+
+.item-details h3 ~ p {
+	margin: 0;
+}
+.item-summary {
+	line-height:1.6;
+}
+	.item-summary ul {
+		line-height: 1.3;
+		font-style: italic;
+		margin-top: 0px;
+	}
+
+.divider > section {
+	border-bottom: 1px dashed #9389BD;
+	padding: 15px 0 0;
+}
+
+	.divider > section:last-of-type {
+		border-bottom: none;
+	}
+.projects {
+	background: #eceef1;
+}
+
+	.projects a {
+		color: #2F3061;
+	}
+
+	.projects .btn {
+		color: #F7FFF7;
+		background: #725f8c;
+		text-decoration: none;
+		padding: 8px;
+		border-radius: 4px;
+		display: inline-block;
+	}
+
+		.projects .btn:hover {
+			background: #9389BD;
+		}
+
+.project-item {
+	overflow: hidden;
+}
+
+	.project-item h3 {
+		margin-top: 0;
+	}
+
+.project-item img {
+	float: right;
+	padding: 0 0 16px 26px;
+
+}
+/* Education */
+.education {
+	padding-bottom: 100px;
+	background-color: #D0E9EF;
+	width: 85%;
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 60px 60px;
+}
+
+	.education p {
+		width: 80%;
+	}
+.education h3 {
+		font-size: 1em;
+	}
+
+/* Skills */
+.skills {
+	padding-bottom: 100px;
+	background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+	width: 85%;
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 60px 60px;
+	color: #3A8799;
+	font-weight: 600;
+}
+
+/* App: Tabbed Image Gallery W3Schools*/
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+	/* Style the images inside the grid */
+	.column img {
+		opacity: 1;
+		cursor: pointer;
+		border-radius: 10px;
+	}
+
+		.column img:hover {
+			opacity: .7;
+		}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* The expanding image container */
+.container {
+	position: relative;
+	display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+	position: absolute;
+	top: 25px;
+	left: 5px;
+	color: #9389BD;
+	font-weight: 600;
+	font-size: 20px;
+	background-color: #fff;
+	padding: 0 6px;
+	box-shadow: 3px 3px #666;
+	border-radius: 10px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	color: #9389BD;
+	font-size: 35px;
+	cursor: pointer;
+	box-shadow: 3px 3px #666;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+/* some colors that may get used very pretty blue #D0E9EF  turquoise #3A8799   purple #725f8c */
+
+/* overlay gallery from Code By Webdevtrick ( https://webdevtrick.com ) */
+ 
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  padding: 0.7em 0;
+}
+ 
+.overlay-container{
+  padding: 1em 0;
+  float: right;
+  width: 50%;
+}
+ 
+.overlay-container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+ 
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+ 
+.content .image-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+ 
+.content:hover .image-overlay{
+  opacity: 1;
+}
+ 
+.content-image{
+  width: 100%;
+}
+ 
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+ 
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+ 
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+ 
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+ 
+.fadeIn-bottom{
+  top: 80%;
+}
+
+
+
+ 
+@media screen and (max-width: 640px){
+  .container{
+    display: block;
+    width: 100%;
+  }
+}
+ 
+@media screen and (min-width: 900px){
+  .container{
+    width: 75%;
+  }
+}
+
+
+
+
+
+/* form styles */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #9389BD;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #9389BD;
+}
+
+.container-form {
+  border-radius: 5px;
+  background-color: #9389BD;
+  padding: 20px;
+  color: white;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#myForm {
+  width: 80%;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+		color: #F7FFF7;
+		background: #725f8c;
+		text-decoration: none;
+		padding: 8px;
+		border-radius: 4px;
+		display: inline-block;
+}		
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Responsive  media queries*/
+@media only screen and (max-width: 1024px) {
+	body {
+		margin: 0;
+	}
+
+	#wrapper {
+		width: auto;
+		min-width: 0;
+		margin: 0;
+		box-shadow: none;
+	}
+
+		header, footer {
+			text-align: center;
+		}
+
+		.project-item img {
+			float: left;
+			margin-right: 20px;
+		}
+
+		.job-item {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			column-gap: 20px;
+		}
+		.grid-container {
+			display: grid;
+			grid-column-gap: 8px;
+			padding: 6px;
+		}
+
+		.grid-item-head {
+			padding: 4px 4px 0px;
+			font-size: 1.1em;
+			font-weight: 400;
+			text-align: center;
+			border-radius: 10px 10px 0px 0px;
+		}
+		.grid-item {
+			padding: 0px 3px 3px;
+			font-size: .8em;
+		}
+
+	}
+
+	@media screen and (max-width:749px) {
+		h1 {
+			font-size: 1.5em;
+			line-height: 0.9;
+			margin-bottom: 10px;
+		}
+
+		h2 {
+			line-height: 1;
+			font-size: 1.2em;
+			margin-top: 10px;
+		}
+
+		header {
+			background: none;
+		}
+		footer {
+			font-size:.8em;
+		}
+
+		main {
+			padding-top: 1px;
+		}
+		.mobile {
+			display: none;
+		}
+		#masthead {
+			width: 95%;
+			margin-top: 6px;
+			background-color: #9389BD;
+			color: #999;
+			box-shadow: none;
+			border-radius: 0;
+			margin: 0 0 10px;
+		}
+		nav ul li {
+			display: block;
+			background-color: #9389BD;
+		}
+		.project-item img {
+			padding: 0 4px 10px 6px;
+		}
+
+	}
