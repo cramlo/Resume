@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Language Apps</title>
+    <link rel="stylesheet" href="css/project_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio website for UX and UI Design projects">
+    <meta name="keywords" content="Nakoda, Nakota, Lakota, Language Project">
+    <meta name="author" content="Cynthia Ramlo">
+    <script src="scripts/project.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav id="masthead">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                    <div class="mobile">
+                        <ul>
+                            <li><a href="ui_design.html">UX & UI</a></li>
+                            <li><a href="app.html">Language Apps</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Language Apps</h1>
+            <h2>Featured Projects</h2>
+        </header>
+        <main>
+            <section class="projects">
+                <div class="content-wrap divider">
+                    <!-- Project 1 -->
+                    <section class="project-item">
+                        <h3>Nakoda Language App</h3>
+                        <p>
+                            The langauge app was designed to accompany the K-5 Nakoda language curriculum. Our linguist wrote simplified versions of traditional stories. Through the app children will be able to listen to the stories that they are learning in school. We are exploring the idea of using Nakota sight words to help to foster literacy and aid reading comprehension.
+                            I created the UI design and app icons, many of which use artwork created by Chelysa Cyr and other native artists--their work brings all of our materials to life.
+                        </p>
+                        <h3>Click on any image to view. </h3>
+                <!-- The four columns -->
+                <div class="row">
+                    <div class="column">
+                        <img src="images/nakota_app.png" alt="Nakoda App" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="images/nakota_stories.png" alt="Nakoda Storybook" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="images/app_vocab.png" alt="Vocabulary" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="images/flower.jpg" alt="Alphabet Book" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:96%">
+                    <div id="imgtext"></div>
+                </div>
+             </section>
+    </div>
+    </section>
+    </main>
+    <footer>
+        <p><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="ui_design.html">UX &amp; UI Designs</a><a href="app.html">Language Apps</a><a href="resume.html">Resume</a></p>
+        <p>
+            &copy; 2020
+        </p>
+    </footer>
+    </div>
+</body>
+</html>
+
+
